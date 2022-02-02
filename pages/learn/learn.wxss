@@ -1,0 +1,33 @@
+/* pages/learn/learn.wxss */
+.box{
+  margin-top: 10px;
+}
+
+.box view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box view:nth-child(1){
+  background-color: yellow;
+}
+
+.box view:nth-child(2){
+  background-color: blueviolet;
+}
+
+.box view:nth-child(3){
+  background-color: green;
+}
+
+.box{
+  display: flex;
+ justify-content: space-around;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+}

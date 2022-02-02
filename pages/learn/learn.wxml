@@ -1,0 +1,15 @@
+<!--pages/learn/learn.wxml-->
+<view class="box box1">
+  <view>布局A</view>
+  <view>布局B</view>
+  <view>布局C</view>
+</view>
+
+<!-- scroll-y 属性：允许纵向滚动 --> 
+<!-- scroll-x 属性：允许橫向滚动 --> 
+<!-- 注意：使用纵向滚动时，必须scroll-view一个固定高度 -->
+<scroll-view class="box box2" scroll-y>
+  <view>滚动A</view>
+  <view>滚动B</view>
+  <view>滚动C</view>
+</scroll-view>
