@@ -1,0 +1,13 @@
+<!--pages/learn/learn.wxml-->
+<!-- indicator-dots属性：显示面板指示点 -->
+<swiper class="swiper-container" indicator-dots autoplay>
+  <swiper-item>
+    <view class="item">A</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>
