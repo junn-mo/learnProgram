@@ -1,0 +1,9 @@
+<!--pages/learn/learn.wxml-->
+<image></image>
+<image src="../../images/1.webp" mode="scaleToFill"></image>
+<image src="../../images/1.webp" mode="aspectFilt"></image>
+<image src="../../images/1.webp" mode="aspectFill"></image>
+<image src="../../images/1.webp" mode="widthFix"></image>
+<image src="../../images/1.webp" mode="heightFix"></image>
+
+
