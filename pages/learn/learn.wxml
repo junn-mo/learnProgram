@@ -1,0 +1,4 @@
+<!--pages/learn/learn.wxml-->
+<view>以下文本长按可以选中：
+  <text user-select="auto">123456789</text>
+</view>
