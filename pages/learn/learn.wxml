@@ -1,0 +1,9 @@
+<!--pages/learn/learn.wxml-->
+
+<view>{{count1}}</view>
+<view>{{count2}}</view>
+
+<!-- 事件绑定 -->
+<view>
+  <button type="primary"  bindtap="changeCount" size="mini"> +1 </button>
+</view>
