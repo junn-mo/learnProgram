@@ -1,0 +1,14 @@
+<!--pages/learn/learn.wxml-->
+
+<!--数据绑定 Mustache语法 -->
+<!-- 1、绑定内容 -->
+<view>{{info}}</view>
+<!-- 2、绑定属性 -->
+<image src="{{imgSrc}}" mode="aspectFill"></image>
+<!-- 3、运算 -->
+<view>{{randomNum1 >=5 ? '数字大于或等于5':'数字小于5'}}</view>
+
+<!-- 事件绑定 -->
+<view bindtap="onClick">
+  <button type="primary"> 按钮</button>
+</view>
