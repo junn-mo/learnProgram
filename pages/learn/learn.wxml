@@ -1,2 +1,21 @@
 <!--pages/learn/learn.wxml-->
-<input value="{{msg}}" bindinput="getdata"></input>
+<!-- 条件渲染 -->
+<block wx:if="{{type==0}}">
+  <view>小明</view>
+  <view>男</view>
+</block>
+<block wx:elif="{{type==1}}">
+  <view>小红</view>
+  <view>女</view>
+</block>
+<block wx:else>
+  <view>外星人</view>
+  <view>未知</view>
+</block>
+
+<view hidden="{{flag}}">为true的时候不显，否则为false的时候显示</view>
+
+<!-- 列表渲染 -->
+<view wx:for="{{childens}}" wx:key="id">
+  当前项：{{index}},当前值：{{item.name}}
+</view>

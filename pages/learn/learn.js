@@ -5,13 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg:'你好,'
-  },
-  getdata(e){
-    console.log(e.detail.value);
-    this.setData({
-      msg:e.detail.value
-    })
+   type:3,
+   flag:true,
+   childens:[{
+     id:1,name:"小明"
+   },{
+    id:2,name:"小红"
+  },{
+    id:3,name:"小王"
+  }]
   },
   /**
    * 生命周期函数--监听页面加载
