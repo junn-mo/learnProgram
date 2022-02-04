@@ -1,4 +1,6 @@
 /* pages/learn/learn.wxss */
+@import "../../common/common.wxss";
+
 image{
   width: 200px;
   height: 200px;

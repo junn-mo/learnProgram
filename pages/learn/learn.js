@@ -5,8 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-   type:3,
-   flag:true,
    childens:[{
      id:1,name:"小明"
    },{
