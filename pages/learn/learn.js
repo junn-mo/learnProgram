@@ -8,12 +8,9 @@ Page({
     count1:0,
     count2:0
   },
-  changeCount(){
-    this.data.count1 +=1
-    
-    this.setData({
-      count2:this.data.count2+1
-    })
+  changeCount(e){
+    console.log(e);
+    console.log(e.target.dataset);
   },
   /**
    * 生命周期函数--监听页面加载
