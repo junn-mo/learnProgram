@@ -1,14 +1,2 @@
 <!--pages/learn/learn.wxml-->
-
-<!-- <view>{{count1}}</view>
-<view>{{count2}}</view> -->
-
-<!-- 事件绑定 -->
-<view>
-  <button 
-    type="primary"  
-    bindtap="changeCount" 
-    data-info1="2" 
-    data-info2="{{2}}"  
-    size="mini"> 传参 </button>
-</view>
+<input value="{{msg}}" bindinput="getdata"></input>

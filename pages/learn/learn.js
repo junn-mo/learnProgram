@@ -5,12 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    count1:0,
-    count2:0
+    msg:'你好,'
   },
-  changeCount(e){
-    console.log(e);
-    console.log(e.target.dataset);
+  getdata(e){
+    console.log(e.detail.value);
+    this.setData({
+      msg:e.detail.value
+    })
   },
   /**
    * 生命周期函数--监听页面加载
