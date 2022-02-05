@@ -1,18 +1,38 @@
-// pages/learn/learn.js
+// pages/home/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   childens:[{
-     id:1,name:"小明"
-   },{
-    id:2,name:"小红"
-  },{
-    id:3,name:"小王"
-  }]
+
   },
+  getInfo(){
+   wx.request({
+     url: 'https://www.escook.cn/api/get',
+     method:'GET',
+     data:{
+       name:'zs',
+       age:20
+     },
+     success:(res)=>{
+       console.log(res);
+     }
+   })
+  },
+  postInfo(){
+    wx.request({
+      url: 'https://www.escook.cn/api/post',
+      method:'POST',
+      data:{
+        name:'zs',
+        age:20
+      },
+      success:(res)=>{
+        console.log(res);
+      }
+    })
+   },
   /**
    * 生命周期函数--监听页面加载
    */

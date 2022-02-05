@@ -1,4 +1,0 @@
-<!--pages/learn/learn.wxml-->
-<view wx:for="{{childens}}" wx:key="id" class="colorRed">
-  当前项：{{index}},当前值：{{item.name}}
-</view>
