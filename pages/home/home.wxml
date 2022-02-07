@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+
+<!-- 一、声明式导航 -->
+<!-- 1、跳转到tabBar -->
+<navigator url="/pages/contact/contact" open-type="switchTab">跳转到tabBar</navigator>
+<!-- 2、跳转到非tabBar -->
+<!-- <navigator url="/pages/message/message" open-type="navigate">跳转到非tabBar</navigator> -->
+<!-- 非tabBar传参 -->
+<navigator url="/pages/message/message?name='李四'&age=18" open-type="navigate">跳转到非tabBar</navigator>
+
+<!-- 二、编程式导航 -->
+<!-- 1、跳转到tabBar -->
+<button bindtap="gotoContact" type="primary" size="mini">跳转到tabBar</button>
+<!-- 2、跳转到非tabBar -->
+<button bindtap="gotoMessage" type="primary" size="mini">跳转到非tabBar</button>
