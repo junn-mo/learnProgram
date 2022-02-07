@@ -5,24 +5,27 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+      count:0
     },
-    gotoContact(){
-        wx.switchTab({
-          url: '/pages/contact/contact',
-        })
+    add(){
+      this.setData({
+        count:this.data.count+1
+      })
     },
-    gotoMessage(){
-        wx.navigateTo({
-          url: '/pages/message/message?name="王二"&age=18',
-        })
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh: function () {
+      this.setData({
+        count:0
+      })
+      wx.stopPullDownRefresh({})
     },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
     },
-
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
@@ -48,13 +51,6 @@ Page({
      * 生命周期函数--监听页面卸载
      */
     onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
 
     },
 
