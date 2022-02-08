@@ -1,4 +1,14 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
 
-<view></view>
+<view>{{m1.numToFixed(count1)}}</view>
+
+<view>{{m2.numToFixed(count2)}}</view>
+
+<wxs module="m1">
+  module.exports.numToFixed = function(num){
+    return num.toFixed(2)
+  }
+</wxs>
+
+<wxs module="m2" src="../../utils/tools.wxs"></wxs>

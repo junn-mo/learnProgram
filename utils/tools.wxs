@@ -1,0 +1,7 @@
+function numToFixed(num){
+    return num.toFixed(2)
+}
+
+module.exports={
+    numToFixed:numToFixed
+}

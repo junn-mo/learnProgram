@@ -5,12 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-      count:0
-    },
-    add(){
-      this.setData({
-        count:this.data.count+1
-      })
+      count1:Math.random(),
+      count2:Math.random()
     },
     /**
      * 页面相关事件处理函数--监听用户下拉动作

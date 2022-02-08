@@ -1,5 +1,1 @@
 /* pages/home/home.wxss */
-view{
-    height: 5000rpx;
-    background-color: aqua;
-}
