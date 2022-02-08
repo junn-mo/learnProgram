@@ -16,11 +16,15 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh: function () {
-      this.setData({
-        count:0
-      })
-      wx.stopPullDownRefresh({})
+
     },
+        /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom: function () {
+      console.log("上拉触底事件");
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */
@@ -53,14 +57,6 @@ Page({
     onUnload: function () {
 
     },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
     /**
      * 用户点击右上角分享
      */
